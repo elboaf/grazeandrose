@@ -1,0 +1,5 @@
+ai-images/
+.build/*.json
+.build/shots/
+downloads/
+out/
