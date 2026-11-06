@@ -42,3 +42,7 @@ wix-dropdown-menu { z-index: 1000; }
 .wixui-gallery .ERjQpM .wixui-gallery__item { position: absolute; inset: 0; opacity: 0; transition: opacity .35s ease; pointer-events: none; }
 .wixui-gallery .ERjQpM .wixui-gallery__item.on { opacity: 1; pointer-events: auto; }
 .wixui-gallery .ERjQpM img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+
+/* home banners: full studio renders, shown uncropped at their true aspect ratio */
+[data-mesh-id=comp-lft2el17inlineContent] { min-height: 0 !important; aspect-ratio: 4096 / 768; }
+[data-mesh-id=comp-lft5acgoinlineContent] { min-height: 0 !important; aspect-ratio: 4096 / 512; }
