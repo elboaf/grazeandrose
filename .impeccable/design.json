@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-02-14T00:00:00Z",
+  "title": "Design System: Graze and Rosé Catering",
+  "extensions": {
+    "colorMeta": {
+      "rose-berry": { "role": "primary", "displayName": "Rose Berry", "canonical": "#9F2747", "tonalRamp": ["#DFA7B6", "#BF778A", "#9F2747", "#6A1A2F", "#350D18"] },
+      "sage-active": { "role": "secondary", "displayName": "Sage Active", "canonical": "#5F7355" },
+      "peach-link": { "role": "secondary", "displayName": "Peach Link", "canonical": "#F8D1C2" },
+      "peach-frame": { "role": "secondary", "displayName": "Peach Frame", "canonical": "#FFE0D4" },
+      "page-blush": { "role": "neutral", "displayName": "Page Blush", "canonical": "#F6CFB7" },
+      "band-blush": { "role": "neutral", "displayName": "Band Blush", "canonical": "#F5DDD0" },
+      "footer-gray": { "role": "neutral", "displayName": "Footer Gray", "canonical": "#E8E6E6" },
+      "hairline-gray": { "role": "neutral", "displayName": "Hairline Gray", "canonical": "#C7C7C7" },
+      "furniture-white": { "role": "neutral", "displayName": "Furniture White", "canonical": "#FFFFFF" },
+      "text-warm-black": { "role": "neutral", "displayName": "Text Warm Black", "canonical": "#3E362E" },
+      "body-gray": { "role": "neutral", "displayName": "Body Gray", "canonical": "#757575" },
+      "taupe-card": { "role": "neutral", "displayName": "Taupe Card", "canonical": "#605E5E" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Baskerville Display", "purpose": "Page titles on title bands; pill-button labels. One moment per page." },
+      "title": { "displayName": "Spinnaker Title", "purpose": "Card titles, underlined, on photo surfaces." },
+      "subhead": { "displayName": "Spinnaker Subhead", "purpose": "Taglines and section statements." },
+      "intro": { "displayName": "Spinnaker Intro", "purpose": "Homepage intro paragraph with slight tracking." },
+      "body": { "displayName": "Spinnaker Body", "purpose": "All reading text; bold spans for ingredient lists." },
+      "label": { "displayName": "Spinnaker Label", "purpose": "Nav, dropdowns, footer links." }
+    },
+    "shadows": [
+      { "name": "card-frame", "value": "0 1px 4px rgba(0,0,0,0.6)", "purpose": "White cards and page containers floating over photo." },
+      { "name": "dropdown", "value": "0 1px 4px rgba(0,0,0,0.2)", "purpose": "Nav hover/focus dropdown panels." },
+      { "name": "footer-logo", "value": "0 1px 3px rgba(0,0,0,0.5)", "purpose": "Small framed logo tile in the footer." }
+    ],
+    "motion": [
+      { "name": "gallery-crossfade", "value": "opacity 0.35s ease", "purpose": "site.css gallery slider crossfade." },
+      { "name": "lqip-blur-up", "value": "blur(9px) over 0.8s", "purpose": "Wix-derived blur-up placeholder reveal." }
+    ],
+    "breakpoints": [
+      { "name": "site-column", "value": "980px" },
+      { "name": "header", "value": "300px" },
+      { "name": "footer", "value": "234px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Active Nav Item",
+      "kind": "nav",
+      "refersTo": "nav-active",
+      "description": "Sage block with white text marks the current page.",
+      "html": "<a class=\"nav-item is-active\" href=\"./\">HOME</a>",
+      "css": ".nav-item.is-active { background: #5F7355; color: #ffffff; }"
+    },
+    {
+      "name": "Pill Button",
+      "kind": "button",
+      "refersTo": "button-stylable",
+      "description": "Signature white pill with Baskerville serif label; hover flips to gray.",
+      "html": "<button class=\"pill-btn\">A Little About Me...</button>",
+      "css": ".pill-btn { background: #FFFFFF; color: #757575; border: 0; border-radius: 60px; font-family: baskervillemtw01-smbdit, serif; font-size: 33px; letter-spacing: 0.05em; padding: 12px 40px; transition: background 0.2s, color 0.2s; } .pill-btn:hover { background: #757575; color: #FFFFFF; }"
+    },
+    {
+      "name": "Pill CTA Box",
+      "kind": "button",
+      "refersTo": "pill-cta",
+      "description": "Taupe fully-rounded box with white underlined link — Offerings / Email.",
+      "html": "<div class=\"pill-cta\"><a href=\"offerings/\">Offerings</a></div>",
+      "css": ".pill-cta { background: #605E5E; border: 1px solid #E6DECA; border-radius: 300px; width: 220px; text-align: center; } .pill-cta a { color: #FFFFFF; font-size: 30px; text-decoration: underline; }"
+    },
+    {
+      "name": "Classic Form Button",
+      "kind": "button",
+      "refersTo": "button-classic",
+      "description": "Square berry-rose submit button on inquiry forms.",
+      "html": "<button class=\"classic-btn\">Submit</button>",
+      "css": ".classic-btn { background: #9F2747; color: #FFFFFF; border: 0; border-radius: 0; padding: 8px 16px; font-family: 'courier new', monospace; font-size: 14px; } .classic-btn:hover { background: rgba(159,39,71,.7); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Styled Board Atelier",
+    "overview": "A hand-styled provisions atelier rendered as a website: warm blush and rosé page surfaces, white furniture, and full-bleed photography of grazing boards styled like floral arrangements. The header is a gallery plaque — the framed logo hung between thin rules on a white wall — and every page closes with a delicate double-line flourish above the footer. Saturated color appears only twice, berry-rose on controls and sage on the active nav item, so the food carries the chroma. Owner is still exploring the north star; Provisions Larder and Garden-Party Editorial remain candidates.",
+    "keyCharacteristics": [
+      "Photography-first pages with aspect-locked full-bleed bands",
+      "980px centered column inside full-width color bands",
+      "Framed logo plaque header; double-line flourish above the footer",
+      "Two-accent discipline: berry controls, sage location, peach links-on-photo"
+    ],
+    "rules": [
+      { "name": "The Two Accents Rule", "body": "Berry rose and sage are the only saturated colors; berry on interactive controls, sage only marks the current page.", "section": "colors" },
+      { "name": "The Quiet Page Rule", "body": "One Baskerville display moment per page; all other text is Spinnaker.", "section": "typography" }
+    ],
+    "dos": [
+      "Do keep photography dominant; text lives on bands, cards, or dimmed photo",
+      "Do fit containers to owner images with aspect-ratio; never fixed pixel heights there",
+      "Do ship owner renders byte-for-byte from _assets/studio/"
+    ],
+    "donts": [
+      "Don't reorder/merge/rename the hashed css/b*.css files",
+      "Don't crop, resize, or recompress owner-supplied images",
+      "Don't introduce new saturated hues or typefaces outside a redesign",
+      "Don't add a form backend; contact stays mailto"
+    ]
+  }
+}
